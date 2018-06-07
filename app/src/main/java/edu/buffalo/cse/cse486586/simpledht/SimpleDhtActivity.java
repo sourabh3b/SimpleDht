@@ -8,15 +8,25 @@ import android.widget.TextView;
 
 public class SimpleDhtActivity extends Activity {
 
+
+    //Static variables ( Referenced from PA1)
+    static final String TAG = SimpleDhtActivity.class.getSimpleName();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple_dht_main);
-        
+
         TextView tv = (TextView) findViewById(R.id.textView1);
         tv.setMovementMethod(new ScrollingMovementMethod());
-        findViewById(R.id.button3).setOnClickListener(
-                new OnTestClickListener(tv, getContentResolver()));
+        findViewById(R.id.button3).setOnClickListener(new OnTestClickListener(tv, getContentResolver()));
+
+        /*todo :
+        * 1. Implement a class called LocalDump  (should  implements OnClickListener just like OnTestClickListener class)
+        * 2. Implement a class called GlobalDump (should  implements OnClickListener just like OnTestClickListener class)
+        * */
+        //findViewById(R.id.button1).setOnClickListener(new LocalDump(tv,getContetn));
     }
 
     @Override
@@ -25,5 +35,6 @@ public class SimpleDhtActivity extends Activity {
         getMenuInflater().inflate(R.menu.activity_simple_dht_main, menu);
         return true;
     }
+
 
 }
