@@ -17,7 +17,6 @@
 * Node join & leave in DHT
 * Effective use of hash table in concurrent systems
 
-
 ## References
  * [AsyncTask Android Official Website](http://developer.android.com/reference/android/os/AsyncTask.html)
  * [All About Sockets : Oracle Official Documentation](https://docs.oracle.com/javase/tutorial/networking/sockets/clientServer.html)
@@ -33,6 +32,5 @@
  * https://www.slideshare.net/paulyang0125/paul-present-chord-v1
  * http://www.baeldung.com/java-treemap
  * https://dzone.com/articles/how-concurrenthashmap-works-internally-in-java
-
-
+ * *
 Developed by [Sourabh Bhagat](https://github.com/sourabh3b)
